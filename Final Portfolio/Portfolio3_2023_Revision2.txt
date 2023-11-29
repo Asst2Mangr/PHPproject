@@ -1,0 +1,94 @@
+Rubric Points:
+	Communication/Professionalism
+		-Comments
+			1pt: Do they give a high level summary?
+			1pt: Are they accurate?
+		-Organization
+			1pt: Do the filenames reflect the content of the files?
+			1pt: Is the code readable
+
+	Total:  __/4
+	
+	Tech Skills
+		-Does it work?
+			2pt: The main program/page runs/launches correctly initially
+			3pt: Additional pages/components run/launch
+			3pt: The program/page avoids both visual and logical errors
+	
+	Total:  __/8
+
+	Critical Thinking
+		-Program is flexible
+			-2pt: The program/pages are modular, and components can be swapped without issue
+			-2pt: The solution integrates the project requirements/new material from the current unit to approach the solution.
+
+	Total:  __/4
+	
+	
+Total rubric points: __/16
+
+
+
+
+
+Requirements:
+
+	1.	Restructure your portfolio to utilize the MVC format, or create a new portfolio from scratch.
+			a. The following elements should exist in your project afterwards:
+				 	An index.php file that serves as the controller for your site.
+					-There should be no html code within this file. It should only contain actions that redirect to views.
+				 A nav and/or header file, containing html code for the top of every page.
+					-Your nav file should now have links that direct users to the controller
+					-These links will use the get array to pass an action to the controller
+				A views folder containing the nav file, as well as the views.
+			 A models folder containing the session header and any other headers/libraries that you create.
+					-Note: The order that you include your headers in will matter. For example, if the session header is not loaded first, the username will not be loaded from the session, and will cause an error with the nav.
+
+		Build a sql database with at least 2 tables on your MySQLServer. Link 2 of these tables at minimum with a foreign key.
+
+		Create a model for starting the session. 
+
+		Create a page that shows a login form. When submitted, this information should be stored in the session.
+
+		Create a model that creates a PDO object for the database. Have the username and password for this PDO object take username and password stored in the session.
+			a. This model should only be called when the database information is necessary.
+			b. If the PDO throws an exception, you should show them an error page.
+
+		Create a page on your site that allows the user to view/edit the database. 
+
+	
+
+Percent of requirements met: __/100%
+
+
+
+Total score: (__*__%)/16
+	-The total score will take your rubric points multiplied by your requirements met
+	-This means that scoring 12 rubric points but only completing 50% of the requirements will result in 6/12 (12*50%)/12.
+
+
+
+
+	
+Other Guidelines:
+	What should be commented/documented:
+		-Functions
+			-Describe the parameters
+				-Any particulars on formatting?
+			-Describe the return value if it's not immediately clear
+				-Should we expect a string formatted in a particular way?
+			-What does the function do, if it's not apparent from the name/params/returns.
+		
+		-Complex sections
+			-If the section does a lot of math, label what problem it's solving
+			-Don't need to know why the math works, but if it's an existing problem, give a name or way to look up what the problem is
+			
+		-File/Library heads
+			-Give a brief overview of your libraries at the top
+			-Same with other files. What do they do? Are they intended as a main page? A component that does math? Etc.
+		
+		-Too many comments can impair readability.
+		-Comments should be high level
+			-Can other programmers get an idea of your approach?
+			-Others don't need to understand your syntax, we know how to program
+			-We need to know the *process* of the operation

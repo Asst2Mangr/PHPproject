@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+html{
+	background-color: rgb(92, 84, 81);
+}
+
+nav div {
+	display: block;
+	float: left;
+	width: auto;
+
+}
+.login {
+	float: right;
+}
+
+nav::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+body
+{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+
+div 
+{
+	margin: 2px;
+}
+
+table, td {
+	border: 1px solid #ddd;
+	padding: 15px;
+	margin: 15px;
+}
+
+tr:hover {background-color: rgb(231, 125, 86);}
